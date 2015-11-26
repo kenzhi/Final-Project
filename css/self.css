@@ -1,8 +1,7 @@
-.nav-li> .active > a:focus {
-    color: #E2B30D; 
-    background-color: #e2b30d;
-    
-}
-.full{
-    background-image: url(https://doc-0o-68-docs.googleusercontent.com/docs/securesc/vmb2bl0tcp34a9uh882vbbiijpdlovgk/naa9t59f1r2ljqbb1df4klicd8p2d9p3/1448467200000/11099756828974800955/06221806385195766226/0B6FM6PUzfgJ4YUJKYVpxQzJYOEk?e=download&nonce=hc3pccplgp5sc&user=06221806385195766226&hash=vin9hiemj6803l2evk9913un74clnc5l, https://drive.google.com/drive/u/0/folders/0B6FM6PUzfgJ4VTJSYUhyRmtvcGc);
+.full {
+    background: url("images/homeBackground.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
