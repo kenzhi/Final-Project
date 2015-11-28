@@ -9,7 +9,6 @@
      <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
     <link href="css/self.css" rel="stylesheet" type="text/css"/>
     
-    
     <!-- Home Slider -->
     <link href="css/slick.css" rel="stylesheet" type="text/css"/>
     <link href="css/slick-theme.css" rel="stylesheet" type="text/css"/>
@@ -24,8 +23,8 @@
 
 <body>
 
+<div class="page-wrap">
     <!--- Navbar --->
-	
     <div class="nav navbar navbar navbar-fixed-top">
         <div class="navbar-inner">
             <nav class="navbar navbar-default">
@@ -44,7 +43,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav nav-pills ">
-                            <li><a href="#">HOME</a></li>
+                          
                             <li><a href="quiz.html">TAKE A QUIZ</a></li>
                             <li><a href="categories.html">CATEGORIES</a></li>
                             <li><a href="experts.htl">EXPERTS</a></li>
@@ -63,7 +62,9 @@
                     <!-- /.navbar-collapse -->
                 </div>
                 <!-- /.container-fluid -->
+               
             </nav>
+            </div></div>
 
             <!--- Navbar END --->
             <!--------------------------------------------------- main body ------------------------------------>
@@ -71,7 +72,7 @@
                <h1>Which pet fits your urban lifestyle?</h1>
                <a href="categories.html"><button id="viewmore">View all pets</button></a>
              </div>
-             <div class="sKbody">
+             <!--<div class="sKbody"> -->
             	<div class="home-slider">
                   <div><img src="images/homeBird.png" alt="bird"></div>
                   <div><img src="images/homeHusky.png" alt="husky"></div>
@@ -80,20 +81,38 @@
                   <div><img src="images/homePersian.png" alt="persian"></div>
                   <div><img src="images/homeTerrier.png" alt="terrier"></div>
 				</div>
-            </div>
-<div id="bg">
-  <img src="images/homeBackground.jpg" alt=""/>
-</div>
-    <footer>
+            <!--</div>-->
+        <div id="bg">
+          <img src="images/homeBackground.jpg" alt=""/>
+        </div>
+</div> <!--end page wrap for sticky footer-->
+    <footer class="site-footer">
         <p class="paraContent footerTextContainer">Website by Melody Craven, Sabrina [name], Caroline [name], and Ken [name]</p>
         <p><a href="resources">Content Sources</a></p>
     </footer>
 
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="http//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.home-slider').slick({
+       	 dots: true,
+ 		 infinite: true,
+ 		 speed: 300,
+ 		 slidesToShow: 1,
+ 		 centerMode: true,
+  			slidesToScroll: 1,
+  			autoplay: true,
+  			autoplaySpeed: 2000,
+ 		 variableWidth: true,
+		 centerMode: true,
+  		centerPadding: '60px',
+      });
+    });
+  </script>
 	</body>
 </html>
