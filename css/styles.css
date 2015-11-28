@@ -109,6 +109,29 @@ a:hover {
 	margin-top: 5%;
 	font-size: 30px;
 }
+#petcareCategories{
+	max-width: 1000px;
+	min-width: 700px;
+	margin: 0px;
+	padding: 2%; 
+}
+#petcareCategories	img{
+		float: left;
+		width: 100px;
+		padding: 0 20px 
+	}
+#chat {
+	float: right;
+	width: 350px;
+	height: 700px;
+	margin-right: 1%;
+	padding: 2%;
+	background-color: white;
+}
+
+
+
+
 #viewmore {
 	font-size: 1.25em;
 }
@@ -140,4 +163,5 @@ html, body {
 .site-footer, .page-wrap:after {
   /* .push must be the same height as footer */
     height: 80px; 
+
 }
