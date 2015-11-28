@@ -33,17 +33,20 @@ body {
 }
 
 .slider {
-    margin: 100px;
+    margin-top:100px;
+    margin-right: auto;
+    width: 1000px;
+    height: auto;
+    margin-left: auto;
 }
 
 .slider img {
     font-size: 60px;
-    line-height: 40px;
+    line-height: auto;
     margin: auto;
-    padding: 20px;
     position: relative;
     text-align: center;
-    height: 10%;
+    height: 100%;
 }
 
 .slider div {
