@@ -1,7 +1,51 @@
+body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: none;
+}
+
 .full {
-    background: url("images/homeBackground.jpg") no-repeat;
+    background: url(http://digitalmedia.neu.edu/dgm6308f15zhim/homeBackground.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}               /* this is the bg-image setup coding.  btw, if you need add other bg-image, you may need to upload it to a server, and use the "background : url(link)" function to make it*/
+
+.t1 {
+    margin-top: 200px;
+    color: #e2b30D;
+    text-align: center;
+}
+
+.t2 {
+    text-align: right;
+    color: #91d5d3;
+}
+
+.b1 {
+    background-color: #f77578;
+    color: #eee;
+}
+
+.r1 {
+    margin-top: 250px;
+}
+
+.slider {
+    margin: 100px;
+}
+
+.slider img {
+    font-size: 60px;
+    line-height: 40px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    height: 10%;
+}
+
+.slider div {
+    margin-right: 20px;
 }

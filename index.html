@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sidekick Home Page</title>
-    <link href="css/self.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/self.css" rel="stylesheet" type="text/css"> <!-- This is my own css, I use it create some style what I want to set -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> <!-- This is the bootsstrap css doc -->
+    <link href="css/slick.css" rel="stylesheet" type="text/css"> <!-- This is slcik css, using it to build the slider show -->
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css"> <!-- This also slick relatd doc. -->
 </head>
 
-<body class="full">
+<body class="full"> <!-- I set the class"full" for making a full srceen bg-image. -->
 
     <!--- Navbar --->
     <div class="nav navbar navbar navbar-fixed-top">
@@ -51,14 +53,47 @@
                 </div>
                 <!-- /.container-fluid -->
             </nav>
-
             <!--- Navbar END --->
-            <!--------------------------------------------------- main body ------------------------------------>
-
         </div>
     </div>
+    <!--------------------------------------------------- main body ------------------------------------>
+
+    <div class="row">
+
+        <!------------------Text and button veiw-------------------->
+
+        <div class="col-md-6 col-md-offset-3 t1">
+            <h4>-HELPING YOU FIND A PET THAT FITS YOUR URBAN LIFESTYLE-</h4></div>
+        <div class="row r1">
+            <div class="col-xs-6 t2">
+                <h4>POPULAR PETS</h4></div>
+            <div class="col-xs-6 offset-4 t3">
+                <button type="submit" class="btn btn-defaulf btn-xs b1">
+                    <h6>View All</h6></button>
+            </div>
+        </div>
+
+        <!------------------------Slider show-------------------->
+
+        <div class="slider col-md-offset-3">
+            <div><img data-lazy="images/bird.png"></div>
+            <div><img data-lazy="images/cat.png"></div>
+            <div><img data-lazy="images/cat2.png"></div>
+            <div><img data-lazy="images/dog.png"></div>
+            <div><img data-lazy="images/dog2.png"></div>
+            <div><img data-lazy="images/dog3.png"></div>
+            <div><img data-lazy="images/dog4.png"></div>
+            <div><img data-lazy="images/fish.png"></div>
+        </div>
+        <div></div>
+    </div>
+
+
 </body>
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script> <!-- This two Jquery files are necessary, they help the bootstrap and slick to run -->
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script> <!--- bootstrap js doc. -->
+<script src="js/slick.js"></script> <!-- slick js doc. -->
+<script src="js/self.js"></script> <!-- this is my own js, I use it to make some function what I need -->
 
 </html>
