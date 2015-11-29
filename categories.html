@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html class = "full" lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <title>Sidekick Home Page</title>
+    <title>Sidekick -- Categories</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
      <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
     <link href="css/self.css" rel="stylesheet" type="text/css"/>
+    
+    <!-- Bootstrap Thumbnail Gallery -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet" type="text/css"/>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
@@ -17,7 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body id="categoryBody" class="fullBackground">
 
 <div class="page-wrap">
     <!--- Navbar --->
@@ -65,19 +68,256 @@
             <!--- Navbar END --->
             <!--------------------------------------------------- main body ------------------------------------>
              
-             <!--<div class="sKbody"> -->
-            	
+            <!--<div class="sKbody"> -->   
+    <div id="typeAnimal">
+       
+    			<!--<ul>
+                	<li>
+                    	<div class="label">Birds</div>
+                        <a class="" href="#">
+                        <img class="img-responsive" src="images/categoryBIRD.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                    <div class="label">Cats</div>
+                        <a class="" href="#">
+                        <img class="img-responsive" src="images/categoryCAT.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="label">Dogs</div>
+                        <a class="" href="#">
+                        <img class="img-responsive" src="images/categoryDOG.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                    	<div class="label">Fish</div>
+                        <a class="" href="#">
+                        <img class="img-responsive" src="images/categoryFISH.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                    	<div class="label">Reptiles</div>
+                        <a class="" href="#">
+                        <img class="img-responsive" src="images/categoryREP.png" alt="">
+                        </a>
+                    </li>
+                  </ul>  -->
+                   <button class="filter" data-filter=".birds"><img class="img-responsive" src="images/categoryBIRD.png" alt="">Birds</button>
+        <button class="filter" data-filter=".cats"><img class="img-responsive" src="images/categoryCAT.png" alt="">Cats</button>
+        <button class="filter" data-filter=".dogs"><img class="img-responsive" src="images/categoryDOG.png" alt="">Dogs</button>
+        <button class="filter" data-filter=".fish"><img class="img-responsive" src="images/categoryFISH.png" alt="">Fish</button>
+        <button class="filter" data-filter=".reptiles"><img class="img-responsive" src="images/categoryREP.png" alt="">Reptiles</button> 
+        
+        <!--<div class="sort" data-sort="default">Reset</div>
+        <h3>Size</h3>
+        <div class="sort" data-sort="smal">Small</div>
+        <div class="sort" data-sort="default">Medium</div>
+        <div class="sort" data-sort="default">Large</div> OTHER SORT OPTIONS-->
+      
+    </div>
+    <div id="Container">
+    		<div class="mix dogs" data-my-order="1">
+                <a href="#">
+                    <img src="images/categoryPic1.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix dogs" data-my-order="2">
+                <a href="#">
+                    <img src="images/categoryPic2.png" alt="">
+                </a>
+            </div>
+            <div class="mix dogs" data-my-order="3">
+                <a href="#">
+                    <img src="images/categoryPic3.png" alt="">
+                </a>
+            </div>
+          <div class="mix dogs" data-my-order="4">
+                <a href="#">
+                    <img src="images/categoryPic4.jpg" alt="">
+                </a>
+            </div>
+          <div class="mix dogs" data-my-order="5">
+                <a href="#">
+                    <img src="images/categoryPic1.jpg" alt="">
+                </a>
+            </div>
+          <div class="mix cats" data-my-order="6">
+                <a href="#">
+                    <img src="images/cats/abyssinian.jpg" alt="">
+                </a>
+            </div>
+         	<div class="mix cats" data-my-order="7">
+                <a href="#">
+                    <img src="images/cats/american_shorthair.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix cats" data-my-order="8">
+                <a href="#">
+                    <img src="images/cats/birman.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix cats" data-my-order="9">
+                <a href="#">
+                    <img src="images/cats/bombaycats.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix cats" data-my-order="10">
+                <a href="#">
+                    <img src="images/cats/EgyptianMau.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix cats" data-my-order="11">
+                <a href="#">
+                    <img src="images/cats/himalayan-cat.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix cats" data-my-order="36">
+                <a href="#">
+                    <img src="images/cats/maine-coon.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix cats" data-my-order="35">
+                <a href="#">
+                    <img src="images/cats/Munchkin.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix cats" data-my-order="34">
+                <a href="#">
+                    <img src="images/cats/Pixie-Bob.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix cats" data-my-order="33">
+                <a href="#">
+                    <img src="images/cats/ragdoll.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix cats" data-my-order="32">
+                <a href="#">
+                    <img src="images/cats/Siamese.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix cats" data-my-order="31">
+                <a href="#">
+                    <img src="images/cats/somali.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix cats" data-my-order="30">
+                <a href="#">
+                    <img src="images/cats/Tonkinese.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix cats" data-my-order="29">
+                <a href="#">
+                    <img src="images/cats/turkish-van.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="12">
+                <a href="#">
+                    <img src="images/birds/abyssinian2-lovebird.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="13">
+                <a href="#">
+                    <img src="images/birds/african-grey.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="14">
+                <a href="#">
+                    <img src="images/birds/alexandrine-parakeets.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="15">
+                <a href="#">
+                    <img src="images/birds/american-singer-canary.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="16">
+                <a href="#">
+                    <img src="images/birds/australian-king-parrot.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="17">
+                <a href="#">
+                    <img src="images/birds/bare-eyed-cockatoo.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="18">
+                <a href="#">
+                    <img src="images/birds/black-lory.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="19">
+                <a href="#">
+                    <img src="images/birds/bourkes-parakeets.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="20">
+                <a href="#">
+                    <img src="images/birds/cinnamon-cockatiel.jpg" alt="">
+                </a>
+            </div>
+         
+            <div class="mix birds" data-my-order="21">
+                <a href="#">
+                    <img src="images/birds/dusky-lory.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="22">
+                <a href="#">
+                    <img src="images/birds/grand-eclectus.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="23">
+                <a href="#">
+                    <img src="images/birds/hyacinth-macaw.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="24">
+                <a href="#">
+                    <img src="images/birds/lesser-sulphur-crested.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="25">
+                <a href="#">
+                    <img src="images/birds/lineolated-parakeet.jpg" alt="">
+                </a>
+            </div>
+            <div class="mix birds" data-my-order="26">
+                <a href="#">
+                    <img src="images/birds/major-mitchells-cockatoo.jpg" alt="">
+                </a>
+            </div>
+             <div class="mix birds" data-my-order="27">
+                <a href="#">
+                    <img src="images/birds/toucan.jpg" alt="">
+                </a>
+            </div>
+    </div> <!--end ID Container-->
+           
+       
             <!--</div>-->
-        <div id="bg">
-          <img src="images/homeBackground.jpg" alt=""/>
-        </div>
+    
 </div> <!--end page wrap for sticky footer-->
     <footer class="site-footer">
         <p class="paraContent footerTextContainer">Website by Melody Craven, Sabrina [name], Caroline [name], and Ken [name]</p>
         <p><a href="resources">Content Sources</a></p>
     </footer>
 
-<script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<script>
+$(function(){
+
+	// Instantiate MixItUp:
+
+	$('#Container').mixItUp();
+
+});
+</script>
+
 	</body>
 </html>
