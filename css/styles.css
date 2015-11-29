@@ -111,22 +111,61 @@ a:hover {
 
 /*Experts page*/
 
+.image { 
+   position: relative; 
+   display: inline;
+   float: left;
+   width: 100%; /* for IE 6 */
+}
+h4 { 
+   position: absolute; 
+   top: 150px; 
+   left: 0; 
+   width: 100%; 
+}
+	h4 span {
+	   color: white; 
+	   font: 14px; 
+	   letter-spacing: -1px;  
+	   background: rgb(0, 0, 0); /* fallback color */
+	   background: rgba(231,153,164, 0.9);
+	   padding: 10px; 
+	}
+	h4 span .spacer {
+   		padding: 5px 5px;
+		background-color: transparent;
+	}
 h3 {
 	font-size: 1em;
 	color: #91d5d3;
 }
 #petcareCategories {
+	position: relative;
+  display: inline-block;
+  float: left;
+  clear: both;
+	max-width: 50%;
 	margin: 0 auto;
 	padding: 2%; 
 }
 
-.container {
-	margin: 0px;
-	}
-.img-responsive{
-		border: none;
-	}
+#petcareCategories .image {
+max-width: 250px;
+max-heigh: 250px;
+  margin: 20px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+       -o-transition: border .2s ease-in-out;
+          transition: border .2s ease-in-out;
+}
+
+#petcareCategories .thumbnail {
+	  border: 1px solid #E799A4;
+}
 #chat {
+	position: relative;
+	display: inline;
 	float: right;
 	max-width: 20%;
 	min-width: 350px;
@@ -186,7 +225,10 @@ h3 {
 	border: none;
 }
 
-
+/* Resources */
+th {
+	font-weight: 700;
+}
 /*Footer styles*/
 footer {
     text-align: center;
