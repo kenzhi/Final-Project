@@ -41,7 +41,6 @@ body {
 }
 
 .slider img {
-    font-size: 60px;
     line-height: auto;
     margin: auto;
     position: relative;
@@ -50,5 +49,6 @@ body {
 }
 
 .slider div {
-    margin-right: 20px;
+    margin-right: 10px;
+    border-color:brown;
 }
