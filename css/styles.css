@@ -104,80 +104,59 @@ a:hover {
 }
 
 /*All pages*/
-#categoryBody .page-wrap, #expertsBody .page-wrap { 
+#categoryBody .page-wrap, #expertsBody .page-wrap, #resourcesBody .page-wrap{ 
 	padding-top: 75px;
 }
 
-
 /*Experts page*/
 
-.image { 
-   position: relative; 
-   display: inline;
-   float: left;
-   width: 100%; /* for IE 6 */
-}
-h4 { 
-   position: absolute; 
-   top: 150px; 
-   left: 0; 
-   width: 100%; 
-}
-	h4 span {
-	   color: white; 
-	   font: 14px; 
-	   letter-spacing: -1px;  
-	   background: rgb(0, 0, 0); /* fallback color */
-	   background: rgba(231,153,164, 0.9);
-	   padding: 10px; 
-	}
-	h4 span .spacer {
-   		padding: 5px 5px;
-		background-color: transparent;
-	}
-h3 {
-	font-size: 1em;
-	color: #91d5d3;
-}
 #petcareCategories {
 	position: relative;
-  display: inline-block;
-  float: left;
-  clear: both;
-	max-width: 50%;
-	margin: 0 auto;
-	padding: 2%; 
+	display: inline-block;
+	float: left;
+	margin: 5%;
+	max-width: 55%;
+	min-width: 55%;
 }
-
-#petcareCategories .image {
-max-width: 250px;
-max-heigh: 250px;
-  margin: 20px;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  -webkit-transition: border .2s ease-in-out;
-       -o-transition: border .2s ease-in-out;
-          transition: border .2s ease-in-out;
+#petcareCategories .icon{
+	width: 70px;
 }
-
-#petcareCategories .thumbnail {
-	  border: 1px solid #E799A4;
+#petcareCategories li a{
+	width: 90px;
+	text-align: center;
+	color: white;
 }
+.tab-content {
+	background-color: white;
+	padding: 15px 25px;
+}
+	.image { 
+	   position: relative; 
+	   display: inline;
+	   float: left;
+	   width: 100%; /* for IE 6 */
+	}
+	.active img {
+		background-color: #AD6E0A;
+	}
+	
+	h3 {
+		font-size: 1em;
+		color: #91d5d3;
+	}
 #chat {
-	position: relative;
-	display: inline;
+	display: inline-block;
 	float: right;
-	max-width: 20%;
+	max-width: 10%;
 	min-width: 350px;
 	height: auto;
 	max-height: 700px;
-	margin: 0 5% 5% 5%;
+	margin: 5% 2%;
 	padding: 2%;
 	background-color: white;
 	border: 5px solid #91d5d3;
 	color: #91d5d3;
 }
-
 .chat-form {
 	background-color: #91d5d3;
   	padding: 10px 15px;
@@ -194,7 +173,6 @@ max-heigh: 250px;
 	font-size: 1.25em;
 }
 
-
 /*Categories page*/
 
 #typeAnimal{
@@ -206,19 +184,15 @@ max-heigh: 250px;
 	list-style-type: none;
 	padding: 15px;
 }
-
 #allAnimals {
 	padding: 0 20px;
 }
-
 #allAnimals .thumbnail img {
 	border: 1px solid black;
 }
-
 #allAnimals .thumbnail{
 	border: none;
 }
-
 .filter {
 	background-color: transparent;
 	color: white;
@@ -229,15 +203,18 @@ max-heigh: 250px;
 th {
 	font-weight: 700;
 }
+table {
+	margin: 0 25px;
+}
 /*Footer styles*/
 footer {
-    text-align: center;
+    clear: both;
+	text-align: center;
     font-size: 13px;
 	font-family: 'Open Sans', sans-serif;
 }
 
 /* Mostly: http://ryanfait.com/sticky-footer/ */
-
 * {
     margin: 0;
 }
