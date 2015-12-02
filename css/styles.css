@@ -37,7 +37,18 @@ nav {
     background-size: cover;
 }               /* this is the bg-image setup coding.  btw, if you need add other bg-image, you may need to upload it to a server, and use the "background : url(link)" function to make it*/
 
-h2, h3, h4, h5, h6{
+.heroText h1 {
+	font-family: 'Fredoka One', cursive;
+}
+#main-content h2 {
+	font-family: 'Fredoka One', cursive;
+	size: 1.5em;
+	color: #91d5d3;
+	text-align: center;
+	padding-bottom: 40px;
+}
+	
+h3, h4, h5, h6{
 	font-family: 'Open Sans', sans-serif;
 	color: rgba(146,146,146,1.00);
 	font-style: normal;
@@ -79,6 +90,10 @@ a:hover {
 }
 
 /* Home Slider */
+.home-slider {
+	max-width: 90%;
+	margin: 0 5%;
+}
 .home-slider img {
 	border: thin solid #E799A4;
 	margin: 0 8px;
@@ -102,19 +117,23 @@ a:hover {
 	margin-top: 5%;
 	font-size: 30px;
 }
-
-/*All pages*/
-#categoryBody .page-wrap, #expertsBody .page-wrap, #resourcesBody .page-wrap{ 
-	padding-top: 75px;
+navbar-brand a:hover {
+	background-color: transparent;
 }
 
+/*All pages*/
+
+#main-content {
+	padding: 50px 0px;
+}
+	
 /*Experts page*/
 
 #petcareCategories {
 	position: relative;
 	display: inline-block;
 	float: left;
-	margin: 5%;
+	margin: 0 5%;
 	max-width: 55%;
 	min-width: 55%;
 }
@@ -128,7 +147,7 @@ a:hover {
 }
 .tab-content {
 	background-color: white;
-	padding: 15px 25px;
+	padding: 20px 25px;
 }
 	.image { 
 	   position: relative; 
@@ -136,9 +155,7 @@ a:hover {
 	   float: left;
 	   width: 100%; /* for IE 6 */
 	}
-	.active img {
-		background-color: #AD6E0A;
-	}
+	
 	
 	h3 {
 		font-size: 1em;
@@ -175,6 +192,9 @@ a:hover {
 
 /*Categories page*/
 
+#Container {
+	margin: 0 5%;
+}
 #typeAnimal{
 	text-align: center;
 }
@@ -200,10 +220,15 @@ a:hover {
 }
 
 /* Resources */
+#resourcesBody{
+	margin: 0 40px;
+}
+
 th {
 	font-weight: 700;
 }
 table {
+	max-width:90%;
 	margin: 0 25px;
 }
 /*Footer styles*/
@@ -225,7 +250,7 @@ html, body {
   min-height: 100%;
   /* equal to footer height */
     margin-bottom: -80px; 
-	padding-top: 142px;
+	padding-top: 80px;
 }
 .page-wrap:after {
   content: "";
