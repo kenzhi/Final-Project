@@ -193,10 +193,11 @@ navbar-brand a:hover {
 /*Categories page*/
 
 #Container {
-	margin: 0 5%;
+	margin: 5% 5%;
 }
 #typeAnimal{
 	text-align: center;
+	margin-bottom:5%;
 }
 #typeAnimal ul li{
 	display: inline;
@@ -204,20 +205,15 @@ navbar-brand a:hover {
 	list-style-type: none;
 	padding: 15px;
 }
-#allAnimals {
-	padding: 0 20px;
-}
-#allAnimals .thumbnail img {
-	border: 1px solid black;
-}
-#allAnimals .thumbnail{
-	border: none;
-}
 .filter {
 	background-color: transparent;
-	color: white;
+	color:  #E799A4;
 	border: none;
 }
+
+img .active {
+	border: #E799A4}
+	}
 
 /* Resources */
 #resourcesBody{
