@@ -8,7 +8,8 @@ YELLOW: #E2B30D RGB 226,179,13
 PALE YELLOW: 255, 216, 102
 PINK: #E799A4 RDG 231,153,164
 PALE BLUE: #91d5d3 RBB 145,213,211
-DARK BLUE: 0, 51, 153*/
+DARK BLUE: 0, 51, 153
+GRAY: #343536*/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -36,7 +37,9 @@ nav {
     -o-background-size: cover;
     background-size: cover;
 }               /* this is the bg-image setup coding.  btw, if you need add other bg-image, you may need to upload it to a server, and use the "background : url(link)" function to make it*/
-
+.grayBackground {
+	background-color: #343536;
+}
 .heroText h1 {
 	font-family: 'Fredoka One', cursive;
 }
@@ -48,11 +51,15 @@ nav {
 	padding-bottom: 40px;
 }
 	
-h3, h4, h5, h6{
+#main-content h3 {
 	font-family: 'Open Sans', sans-serif;
-	color: rgba(146,146,146,1.00);
+	color: #343536;
 	font-style: normal;
 	font-weight: 400;
+}
+
+#main-content h4 {
+	color: #AD6E0A;
 }
 p {
 	font-size: 14px;
@@ -156,11 +163,6 @@ navbar-brand a:hover {
 	   width: 100%; /* for IE 6 */
 	}
 	
-	
-	h3 {
-		font-size: 1em;
-		color: #91d5d3;
-	}
 #chat {
 	display: inline-block;
 	float: right;
@@ -207,14 +209,41 @@ navbar-brand a:hover {
 }
 .filter {
 	background-color: transparent;
-	color:  #E799A4;
-	border: none;
+	border: 1px solid #E799A4;
+	color: #E799A4;
+	margin: 0 10px;
 }
-
-img .active {
-	border: #E799A4}
+#filter-two {
+	float: right;
+	margin-right: 5%;
+	max-width: 10%;
+	min-width: 80px;
+	background-color: white;
+	border: none;
+	padding: 1% 2% 2%;
+}
+	#filter-btn {
+		background-color: #E799A4;
+		margin: 20px auto 0;
+		padding: 5px 10px;
+		border-radius: 5px;
+		border: none;
+		color: white;
+		text-align: center;
 	}
 
+
+/* Quiz */
+
+.pb_feed .play_game_button {
+	background-color: #91d5d3;
+}
+.pb_feed .question_freetext {
+	background-color: #91d5d3;
+}
+.pb_feed {
+	max-height: 200px;
+}
 /* Resources */
 #resourcesBody{
 	margin: 0 40px;
