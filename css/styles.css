@@ -14,21 +14,25 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
  -ms-text-size-adjust: 100%;
-/*background-image: url(../images/homeBackground.jpg) no-repeat center center fixed; //THIS ISN"T WORKING
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
 }
 
 nav {
-	height: 80px;
-	padding: 15px;
+	height: 75px;
+	padding: 10px;
+}
+
+nav li a{
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 1em;
 }
 	div .navbar-header, div .navbar-brand{
 		margin: 5px 50px;
 		padding: 0px;
 	}
+	.navbar-nav > li > a:hover {
+		color: black;
+	}
+	
 
 .fullBackground {
   background: url(http://digitalmedia.neu.edu/dgm6308f15zhim/homeBackground.png) no-repeat center center fixed;
@@ -42,6 +46,8 @@ nav {
 }
 .heroText h1 {
 	font-family: 'Fredoka One', cursive;
+	font-size: 3em;
+	padding-top: 50px;
 }
 #main-content h2 {
 	font-family: 'Fredoka One', cursive;
@@ -56,6 +62,7 @@ nav {
 	color: #343536;
 	font-style: normal;
 	font-weight: 400;
+	font-size: 1.5em;
 }
 
 #main-content h4 {
@@ -68,16 +75,6 @@ p {
 	font-weight: 100;
 	color: rgba(146,146,146,1.00);
 	line-height: 1.8;
-}
-
-a {
-	color: rgba(146,146,146,1.00);
-}
-a:visited {
-	color: rgba(145,213,211,1.00);
-}
-a:hover {
-	color: rgba(173,110,10,1.00);
 }
 
 .heroText {
@@ -95,20 +92,25 @@ a:hover {
 	color: white;
 	text-align: center;
 }
+button {
+	font-size: 1.25em;
+}
 
 /* Home Slider */
 .home-slider {
 	max-width: 90%;
 	margin: 0 5%;
 }
-.home-slider img {
+.home-slider img, #animal-detail {
 	border: thin solid #E799A4;
-	margin: 0 8px;
 	z-index:-1000px;
 	border-radius: 4px;
   -webkit-transition: border .2s ease-in-out;
        -o-transition: border .2s ease-in-out;
           transition: border .2s ease-in-out;
+}
+.home-slider img{
+		margin: 0 8px;
 }
 .headingStyle {
 	font-family: 'Open Sans', sans-serif;
@@ -121,34 +123,28 @@ a:hover {
 	color: rgba(173,110,10,1.00);
 	font-family: 'Fira Sans', sans-serif;
 	text-align: center;
-	margin-top: 5%;
-	font-size: 30px;
 }
-navbar-brand a:hover {
-	background-color: transparent;
+#viewmore {
+	font-size: 1.25em;
 }
 
 /*All pages*/
 
 #main-content {
-	padding: 50px 0px;
+	margin: 100px;
 }
 	
 /*Experts page*/
 
 #petcareCategories {
-	position: relative;
-	display: inline-block;
 	float: left;
-	margin: 0 5%;
-	max-width: 55%;
-	min-width: 55%;
+	max-width: 60%;
+	min-width: 550px;
 }
 #petcareCategories .icon{
 	width: 70px;
 }
 #petcareCategories li a{
-	width: 90px;
 	text-align: center;
 	color: white;
 }
@@ -156,73 +152,70 @@ navbar-brand a:hover {
 	background-color: white;
 	padding: 20px 25px;
 }
-	.image { 
-	   position: relative; 
-	   display: inline;
-	   float: left;
-	   width: 100%; /* for IE 6 */
+	#expert { 
+		position:relative;
+		display: inline;
+	   	float: left;
+		width: 30%;
+	}
+	
+	#greeting {
+		display: inline;
+		float: left;
+		width: 60%;
+		margin-bottom: 20px;
 	}
 	
 #chat {
-	display: inline-block;
+	display: inline;
 	float: right;
 	max-width: 10%;
 	min-width: 350px;
 	height: auto;
-	max-height: 700px;
-	margin: 5% 2%;
-	padding: 2%;
+	margin: 10% 0;
+	padding: 0 2% 2%;
 	background-color: white;
 	border: 5px solid #91d5d3;
 	color: #91d5d3;
 }
-.chat-form {
-	background-color: #91d5d3;
-  	padding: 10px 15px;
-  	margin-top: 8px;
-  	margin-right: -15px;
- 	margin-bottom: 8px;
-  	margin-left: -15px;
- 	border-top: 1px solid transparent;
- 	border-bottom: 1px solid transparent;
-  	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
-   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
-}
-#viewmore {
-	font-size: 1.25em;
+
+.input {
+	margin-top: 10%;
+	width: 10%;
 }
 
+.chat { /*button*/
+	background-color: #E799A4;
+	float: left;
+		margin: 20px auto 0;
+		padding: 5px 10px;
+		border-radius: 5px;
+		border: none;
+		color: white;
+		text-align: center;
+	}
+	
+	#questionArea{
+		float: left;
+		width: 100%;
+	}
+	
 /*Categories page*/
 
 #Container {
-	margin: 5% 5%;
-}
-#typeAnimal{
-	text-align: center;
-	margin-bottom:5%;
-}
-#typeAnimal ul li{
-	display: inline;
-	float: left;
-	list-style-type: none;
-	padding: 15px;
-}
-.filter {
-	background-color: transparent;
-	border: 1px solid #E799A4;
-	color: #E799A4;
-	margin: 0 10px;
+	margin: 0;
+	padding: 0;
 }
 #filter-two {
 	float: right;
 	margin-right: 5%;
-	max-width: 10%;
-	min-width: 80px;
+	max-width: 12%;
+	min-width: 145px;
 	background-color: white;
 	border: none;
-	padding: 1% 2% 2%;
+	padding: 3%;
 }
-	#filter-btn {
+	#reset {
 		background-color: #E799A4;
 		margin: 20px auto 0;
 		padding: 5px 10px;
@@ -232,29 +225,65 @@ navbar-brand a:hover {
 		text-align: center;
 	}
 
+/* Details */
+
+#left{
+	display: inline;
+	float: left;
+	width: 20%;
+}	
+	#audio-icon{
+		float: right;
+		clear: both;
+		margin-top: 25px;
+		max-width: 25px;
+	}
+#stats {
+	display: inline;
+	float: left;
+	color: white;
+	max-width: 70%;
+	min-width: 70%;
+	padding: 0 75px;
+}
+	#stats td, #stats th{
+		border-bottom: 1px solid #91d5d3;
+		padding: 5px;
+	}
+	#stats th{
+		color:#E799A4 ;
+	}
+
 
 /* Quiz */
 
-.pb_feed .play_game_button {
+#main-content .play_game_button {
 	background-color: #91d5d3;
 }
-.pb_feed .question_freetext {
+#main-content .question_freetext {
 	background-color: #91d5d3;
 }
-.pb_feed {
-	max-height: 200px;
+ .game_image_inner, .game_image_wrapper img{
+	max-width: 100%;
 }
-/* Resources */
+
+.quizBody #quiz{
+	max-width: 40%;
+	margin: 0 auto;
+}
+ .game_image_inner #result_details {
+	color: #91d5d3;
+}
+/* Sources */
 #resourcesBody{
-	margin: 0 40px;
+	margin: 0 50px;
 }
 
 th {
 	font-weight: 700;
 }
 table {
-	max-width:90%;
-	margin: 0 25px;
+	max-width:75%;
 }
 /*Footer styles*/
 footer {
@@ -274,8 +303,8 @@ html, body {
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-    margin-bottom: -80px; 
-	padding-top: 80px;
+    margin-bottom: -50px; 
+	padding-top: 50px;
 }
 .page-wrap:after {
   content: "";
@@ -283,14 +312,42 @@ html, body {
 }
 .site-footer, .page-wrap:after {
   /* .push must be the same height as footer */
-    height: 80px; 
+    height: 50px; 
 	padding: 10%;
 }
 
 @media (min-width: 300px) and (max-width: 450px) {
-	 .page-wrap {
-		padding-top: 25px;
-	}
+
+#main-content {
+	margin: 100px 10px 0;
+}
+.navbar-collapse{
+	background-color: white;
+}
+
+/*quiz*/
+.quizBody #quiz{
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+/*categories*/
+#filter-two {
+	float: left;
+	margin: 10px auto;
+	max-width: 100%;
+	min-width: 100%;
+}
+
+/*experts*/
+#petcareCategories {
+	max-width: 100%;
+	min-width: 100%;
+	margin: 0 auto;
+}
+#petcareCategories .icon{
+	width: 30px;
+}
 }
 
 

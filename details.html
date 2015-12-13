@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html class = "full" lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <title>Sidekick Home Page</title>
+    <title>Sidekick -- Categories</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+     <link href="css/categories.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
      <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
-    <link href="css/self.css" rel="stylesheet" type="text/css"/>
+    <!-- Bootstrap Thumbnail Gallery -->
     
-    <!-- Home Slider -->
-    <link href="css/slick.css" rel="stylesheet" type="text/css"/>
-    <link href="css/slick-theme.css" rel="stylesheet" type="text/css"/>
     
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Fira+Mono:400,700|Bree+Serif" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Fira+Mono:400,700|Bree+Serif" rel="stylesheet" type="text/css">
+    
 </head>
 
-<body class="quizBody grayBackground">
+<body id="categoryBody" class="grayBackground">
 
 <div class="page-wrap">
     <!--- Navbar --->
@@ -37,6 +36,7 @@
                         </button>
                         <a class="navbar-brand" href="index.html"><img class="logo" alt="Brand" src="images/logo.png"></a>
                     </div>
+                    
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -63,27 +63,67 @@
                
             </nav>
             </div>
-            </div>
+           </div>
 
             <!--- Navbar END --->
             <!--------------------------------------------------- main body ------------------------------------>
-            <div id="main-content">
-              <h2>Take a quiz to determine your pet personality</h2>
-              	<div id="quiz">
-            	<script type="text/javascript" src="http://cdn.playbuzz.com/widget/feed.js"></script>
-<div class="pb_feed" data-embed-by="68dab52c-6f97-495b-a4d6-eee7d612a818" data-game="/melodycraven10/what-pet-fits-your-personality" data-height="800" data-recommend="false" data-game-info="false" data-comments="false" data-shares="false" ></div>
-				</div>
-            	
-  </div><!--end main-content-->
-</div> <!--end page wrap for sticky footer-->
-   <footer class="site-footer">
+             
+            <!--<div class="sKbody"> -->   
+    <div id="main-content">
+      <h2>Maine Coon</h2>
+	  <div id="left">
+          <img id="animal-detail" src="images/cats/maine-coon-lg.jpg" alt="play">
+          <input type="image" id="audio-icon" src="images/audio-icon.png">
+          <audio id="animal-sound" preload="auto">
+            <source src="audio/cat-meow.mp3" type="audio/mpeg"></source>
+          </audio>
+      </div>
+      <table id="stats" cellspacing="0">
+      	<tbody>
+        <tr>
+          <th scope="row">Color:</th>
+          <td>Ruddy, red, blue and fawn</td>
+        </tr>
+        <tr>
+          <th scope="row">Coat:</th>
+          <td>Ticked, richly colored tabby coat without markings on legs, tail and neck, but with dramatic facial markings.</td>
+        </tr>
+        <tr>
+          <th scope="row">Grooming:</th>
+          <td>The Abyssinian's resilient, silky coat makes grooming a breeze. An occasional bath and brushing should suffice. Routine dental checkups are also recommended.</td>
+        </tr>
+        <tr>
+          <th scope="row">Best Home:</th>
+          <td>Abyssinians are social cats. Some form of companionship is highly recommended.</td>
+        </tr>
+        <tr>
+          <th scope="row">National Breed Club:</th>
+          <td>Abyssinian Cat Club of America, (480) 893-7695, www.abyworld.com</td>
+        </tr>
+        <tr>
+          <th scope="row">Personality:</th>
+          <td>Active, intelligent and loving, Abyssinians breathe life into any household. They're loyal, love a good shoulder ride and are apt to teach their owners to play fetch.</td>
+        </tr>
+        <tr>
+          <th scope="row">Appearance:</th>
+          <td>Abyssinians dazzle observers with "ticked" fur that glistens with bands of color, particularly in sunlight. Lithe and graceful, these elegent cats are often described as a happy medium between the cobby body type of the American Shorthair and svelte Siamese.</td>
+        </tr>
+      </tbody>
+    </table>
+ 	 </div><!--end main-content-->
+    
+	</div> <!--end page wrap for sticky footer-->
+   
+	<footer class="site-footer">
         <p class="paraContent footerTextContainer">Website by Melody Craven, Xinyu Mu, Zhixuan Li, and Minghui Zhi</p>
         <p><a href="resources.html">Content Sources</a></p>
     </footer>
-
+<script type="text/javascript" src="js/self.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+
 
 	</body>
 </html>

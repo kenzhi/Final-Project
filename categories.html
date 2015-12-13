@@ -4,367 +4,502 @@
 <head>
     <meta charset="UTF-8">
     <title>Sidekick -- Categories</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-     <link href="css/categories.css" rel="stylesheet" type="text/css"/>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-     <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/categories.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
     <!-- Bootstrap Thumbnail Gallery -->
-    
-    
+
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Fira+Mono:400,700|Bree+Serif" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet" type="text/css">
-    
+
 </head>
 
 <body id="categoryBody" class="grayBackground">
 
-<div class="page-wrap">
-    <!--- Navbar --->
-    <div class="nav navbar navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html"><img class="logo" alt="Brand" src="images/logo.png"></a>
+    <div class="page-wrap">
+        <!--- Navbar --->
+        <div class="nav navbar navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html"><img class="logo" alt="Brand" src="images/logo.png"></a>
+                        </div>
+
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav nav-pills ">
+
+                                <li><a href="quiz.html">QUIZ</a></li>
+                                <li><a href="categories.html">CATEGORIES</a></li>
+                                <li><a href="experts.html">EXPERTS</a></li>
+                            </ul>
+
+                            <!--- Search tool --->
+                            <form class="navbar-form navbar-right" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </form>
+                            <!--- Search tools END --->
+
+                        </div>
+                        <!-- /.navbar-collapse -->
                     </div>
-                    
+                    <!-- /.container-fluid -->
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav nav-pills ">
-                          
-                            <li><a href="quiz.html">TAKE A QUIZ</a></li>
-                            <li><a href="categories.html">CATEGORIES</a></li>
-                            <li><a href="experts.html">EXPERTS</a></li>
-                        </ul>
+                </nav>
+            </div>
+        </div>
 
-                        <!--- Search tool --->
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
-                        <!--- Search tools END --->
+        <!--- Navbar END --->
+        <!--------------------------------------------------- main body ------------------------------------>
 
+        <!--<div class="sKbody"> -->
+        <div id="main-content">
+            <h2>Find a suitable pet based on their traits</h2>
+ 
+            <div id="filter-two">
+                <form class="controls" id="Filters">
+                 <fieldset>
+                        <h4>Type</h4>
+                        <label><input type="checkbox" value=".birds"> Bird</label>
+                      	<label><input type="checkbox" value=".cats"> Cat</label>
+                        <label><input type="checkbox" value=".dogs"> Dog</label>
+                        <label><input type="checkbox" value=".fish"> Fish</label>
+                        <label><input type="checkbox" value=".reptiles"> Reptiles</label>
+                    </fieldset>
+                    <fieldset>
+                        <h4>Size</h4>
+                        <label><input type="checkbox" value=".large"> Large</label>
+                        <label><input type="checkbox" value=".medium"> Medium</label>
+                        <label><input type="checkbox" value=".small"> Small</label>
+                    </fieldset>
+                    <fieldset>
+                        <h4>Color</h4>
+                        <label><input type="checkbox" value=".black"> Black</label>
+                        <label><input type="checkbox" value=".brown"> Brown</label>
+                        <label><input type="checkbox" value=".orange"> Orange</label>
+                        <label><input type="checkbox" value=".white"> White</label>
+                        <label><input type="checkbox" value=".red"> Red</label>
+                        <label><input type="checkbox" value=".pink"> Pink</label>
+                        <label><input type="checkbox" value=".green"> Green</label>
+                        <label><input type="checkbox" value=".blue"> Blue</label>
+                        <label><input type="checkbox" value=".yellow"> Yellow</label>
+                        <label><input type="checkbox" value=".grey"> Grey</label>
+                    </fieldset>
+                    <div>
+                        <a href="results.html">
+                            <button id="reset">Reset</button>
+                        </a>
                     </div>
-                    <!-- /.navbar-collapse -->
+                </form>
+            </div> <!--<div id filter-two> -->
+
+            <div id="Container" class="container">
+                <div class="mix dogs yellow medium" data-myorder="1">
+                    <a href="details.html">
+                        <img src="images/categoryPic1.jpg" alt="" class="img-rounded thumbnail">
+                    </a>
                 </div>
-                <!-- /.container-fluid -->
+                <div class="mix dogs black white medium" data-myorder="2">
+                    <a href="details.html ">
+                        <img src="images/categoryPic2.png " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix dogs small black" data-myorder="3 ">
+                    <a href="details.html ">
+                        <img src="images/categoryPic3.png " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix dogs large brown white" data-myorder="4 ">
+                    <a href="details.html ">
+                        <img src="images/categoryPic4.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix dogs yellow medium" data-myorder="5 ">
+                    <a href="details.html ">
+                        <img src="images/categoryPic1.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                
+                <div class="mix cats black medium" data-myorder="9 ">
+                    <a href="details.html ">
+                        <img src="images/cats/bombaycats.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix cats white medium" data-myorder="10 ">
+                    <a href="details.html ">
+                        <img src="images/cats/EgyptianMau.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix cats brwon medium" data-myorder="11 ">
+                    <a href="details.html ">
+                        <img src="images/cats/himalayan-cat.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix cats brwon medium" data-myorder="36 ">
+                    <a href="details.html ">
+                        <img src="images/cats/maine-coon.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix cats white small" data-myorder="35 ">
+                    <a href="details.html ">
+                        <img src="images/cats/Munchkin.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix cats small brwon" data-myorder="34 ">
+                    <a href="details.html ">
+                        <img src="images/cats/Pixie-Bob.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix cats small white" data-myorder="33 ">
+                    <a href="details.html ">
+                        <img src="images/cats/ragdoll.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix cats large white" data-myorder="32 ">
+                    <a href="details.html ">
+                        <img src="images/cats/Siamese.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix cats brown large" data-myorder="31 ">
+                    <a href="details.html ">
+                        <img src="images/cats/somali.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix cats white medium" data-myorder="30 ">
+                    <a href="details.html ">
+                        <img src="images/cats/Tonkinese.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
                
-            </nav>
-            </div></div>
+                <div class="mix birds green yellow red small" data-myorder="12 ">
+                    <a href="details.html ">
+                        <img src="images/birds/abyssinian2-lovebird.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds black white large" data-myorder="13 ">
+                    <a href="details.html ">
+                        <img src="images/birds/african-grey.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds green small" data-myorder="14 ">
+                    <a href="details.html ">
+                        <img src="images/birds/alexandrine-parakeets.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds yellow small " data-myorder="15 ">
+                    <a href="details.html ">
+                        <img src="images/birds/american-singer-canary.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds green red small" data-myorder="16 ">
+                    <a href="details.html ">
+                        <img src="images/birds/australian-king-parrot.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds white small" data-myorder="17 ">
+                    <a href="details.html ">
+                        <img src="images/birds/bare-eyed-cockatoo.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds black small" data-myorder="18 ">
+                    <a href="details.html ">
+                        <img src="images/birds/black-lory.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds orange small" data-myorder="19 ">
+                    <a href="details.html ">
+                        <img src="images/birds/bourkes-parakeets.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds yellow small" data-myorder="20 ">
+                    <a href="details.html ">
+                        <img src="images/birds/cinnamon-cockatiel.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
 
-            <!--- Navbar END --->
-            <!--------------------------------------------------- main body ------------------------------------>
-             
-            <!--<div class="sKbody"> -->   
-    <div id="main-content" >
-    	<h2>Find a suitable pet based on their traits</h2>
-    	<div id="typeAnimal">
-      <button class="filter" data-filter=".birds"><img class="img-responsive" src="images/categoryBIRD.png" alt="">Birds</button>
-        <button class="filter" data-filter=".cats"><img class="img-responsive" src="images/categoryCAT.png" alt="">Cats</button>
-        <button class="filter" data-filter=".dogs"><img class="img-responsive" src="images/categoryDOG.png" alt="">Dogs</button>
-        <button class="filter" data-filter=".fish"><img class="img-responsive" src="images/categoryFISH.png" alt="">Fish</button>
-        <button class="filter" data-filter=".reptiles"><img class="img-responsive" src="images/categoryREP.png" alt="">Reptiles</button> 
-        
-        <!--<div class="sort" data-sort="default">Reset</div>
-        <h3>Size</h3>
-        <div class="sort" data-sort="a-m">Small</div>
-        <div class="sort" data-sort="n-z">Medium</div>
-        <div class="sort" data-sort="default">Large</div> OTHER SORT OPTIONS-->
-      
-    </div>
-    <div id="filter-two">
-    		<form action="">
-               <h4>Size</h4>
-                  <input type="checkbox" name="size" value="large"> Large<br>
-                  <input type="checkbox" name="size" value="medium"> Medium<br>
-                  <input type="checkbox" name="size" value="small"> Small 
-            </form>
-            <form action="">
-               <h4>Color</h4>
-                  <input type="checkbox" name="size" value="black"> Black<br>
-                  <input type="checkbox" name="size" value="brown"> Brown<br>
-                  <input type="checkbox" name="size" value="orange"> Orange<br>
-                  <input type="checkbox" name="size" value="white"> White<br>
-                  <input type="checkbox" name="size" value="yellow"> Yellow<br>
-            </form>
-               <a href="results.html"><button id="filter-btn">Filter</button></a>
-    </div>
-    <div id="Container" class="container">
-    		<div class="mix dogs" data-myorder="1">
-            <a href="details.html">
-                <img src="images/categoryPic1.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix dogs" data-myorder="2">
-            <a href="details.html">
-                <img src="images/categoryPic2.png" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix dogs" data-myorder="3">
-            <a href="details.html">
-                <img src="images/categoryPic3.png" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix dogs" data-myorder="4">
-            <a href="details.html">
-                <img src="images/categoryPic4.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix dogs" data-myorder="5">
-            <a href="details.html">
-                <img src="images/categoryPic1.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="6">
-            <a href="details.html">
-                <img src="images/cats/abyssinian.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="7">
-            <a href="details.html">
-                <img src="images/cats/american_shorthair.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="8">
-            <a href="details.html">
-                <img src="images/cats/birman.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="9">
-            <a href="details.html">
-                <img src="images/cats/bombaycats.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="10">
-            <a href="details.html">
-                <img src="images/cats/EgyptianMau.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="11">
-            <a href="details.html">
-                <img src="images/cats/himalayan-cat.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="36">
-            <a href="details.html">
-                <img src="images/cats/maine-coon.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="35">
-            <a href="details.html">
-                <img src="images/cats/Munchkin.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="34">
-            <a href="details.html">
-                <img src="images/cats/Pixie-Bob.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="33">
-            <a href="details.html">
-                <img src="images/cats/ragdoll.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="32">
-            <a href="details.html">
-                <img src="images/cats/Siamese.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="31">
-            <a href="details.html">
-                <img src="images/cats/somali.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="30">
-            <a href="details.html">
-                <img src="images/cats/Tonkinese.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix cats" data-myorder="29">
-            <a href="details.html">
-                <img src="images/cats/turkish-van.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="12">
-            <a href="details.html">
-                <img src="images/birds/abyssinian2-lovebird.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="13">
-            <a href="details.html">
-                <img src="images/birds/african-grey.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="14">
-            <a href="details.html">
-                <img src="images/birds/alexandrine-parakeets.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="15">
-            <a href="details.html">
-                <img src="images/birds/american-singer-canary.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="16">
-            <a href="details.html">
-                <img src="images/birds/australian-king-parrot.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="17">
-            <a href="details.html">
-                <img src="images/birds/bare-eyed-cockatoo.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="18">
-            <a href="details.html">
-                <img src="images/birds/black-lory.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="19">
-            <a href="details.html">
-                <img src="images/birds/bourkes-parakeets.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="20">
-            <a href="details.html">
-                <img src="images/birds/cinnamon-cockatiel.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
+                <div class="mix birds orange black medium" data-myorder="21 ">
+                    <a href="details.html ">
+                        <img src="images/birds/dusky-lory.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds green red small" data-myorder="22 ">
+                    <a href="details.html ">
+                        <img src="images/birds/grand-eclectus.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds blue small" data-myorder="23 ">
+                    <a href="details.html ">
+                        <img src="images/birds/hyacinth-macaw.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds white yellow large" data-myorder="24 ">
+                    <a href="details.html ">
+                        <img src="images/birds/lesser-sulphur-crested.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds blue small" data-myorder="25 ">
+                    <a href="details.html ">
+                        <img src="images/birds/lineolated-parakeet.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds white orange large" data-myorder="26 ">
+                    <a href="details.html ">
+                        <img src="images/birds/major-mitchells-cockatoo.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix birds black yellow small" data-myorder="27 ">
+                    <a href="details.html ">
+                        <img src="images/birds/toucan.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix reptiles pink white small" data-myorder="37 ">
+                    <a href="details.html ">
+                        <img src="images/reptile/reptile1.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
 
-        <div class="mix birds" data-myorder="21">
-            <a href="details.html">
-                <img src="images/birds/dusky-lory.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="22">
-            <a href="details.html">
-                <img src="images/birds/grand-eclectus.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="23">
-            <a href="details.html">
-                <img src="images/birds/hyacinth-macaw.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="24">
-            <a href="details.html">
-                <img src="images/birds/lesser-sulphur-crested.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="25">
-            <a href="details.html">
-                <img src="images/birds/lineolated-parakeet.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="26">
-            <a href="details.html">
-                <img src="images/birds/major-mitchells-cockatoo.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix birds" data-myorder="27">
-            <a href="details.html">
-                <img src="images/birds/toucan.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-         <div class="mix reptiles" data-myorder="37">
-            <a href="details.html">
-                <img src="images/reptile/reptile1.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-       
-        <div class="mix fish" data-myorder="40">
-            <a href="details.html">
-                <img src="images/fish/fish1.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix fish" data-myorder="41">
-            <a href="details.html">
-                <img src="images/fish/fish2.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix fish" data-myorder="42">
-            <a href="details.html">
-                <img src="images/fish/fish3.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix fish" data-myorder="43">
-            <a href="details.html">
-                <img src="images/fish/fish4.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix fish" data-myorder="44">
-            <a href="details.html">
-                <img src="images/fish/fish5.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix fish" data-myorder="45">
-            <a href="details.html">
-                <img src="images/fish/fish6.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix fish" data-myorder="46">
-            <a href="details.html">
-                <img src="images/fish/fish7.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix fish" data-myorder="47">
-            <a href="details.html">
-                <img src="images/fish/fish8.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-         <div class="mix reptiles" data-myorder="38">
-            <a href="details.html">
-                <img src="images/reptile/reptile2.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
-        <div class="mix reptiles" data-myorder="39">
-            <a href="details.html">
-                <img src="images/reptile/reptile3.jpg" alt="" class="img-rounded thumbnail">
-            </a>
-        </div>
+                <div class="mix fish small grey" data-myorder="40 ">
+                    <a href="details.html ">
+                        <img src="images/fish/fish1.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix fish blue small" data-myorder="41 ">
+                    <a href="details.html ">
+                        <img src="images/fish/fish2.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix fish yellow small" data-myorder="42 ">
+                    <a href="details.html ">
+                        <img src="images/fish/fish3.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix fish red white large" data-myorder="43 ">
+                    <a href="details.html ">
+                        <img src="images/fish/fish4.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix fish yellow grey small" data-myorder="44 ">
+                    <a href="details.html ">
+                        <img src="images/fish/fish5.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix fish green small" data-myorder="45 ">
+                    <a href="details.html ">
+                        <img src="images/fish/fish6.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix fish yellow medium" data-myorder="46 ">
+                    <a href="details.html ">
+                        <img src="images/fish/fish7.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix fish white red small" data-myorder="47 ">
+                    <a href="details.html ">
+                        <img src="images/fish/fish8.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix reptiles yellow orange medium" data-myorder="38 ">
+                    <a href="details.html ">
+                        <img src="images/reptile/reptile2.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+                <div class="mix reptiles white orange small grey" data-myorder="39 ">
+                    <a href="details.html ">
+                        <img src="images/reptile/reptile3.jpg " alt=" " class="img-rounded thumbnail ">
+                    </a>
+                </div>
+            </div><!--end ID Container-->
+        </div><!--end main-content-->
+    </div><!--end page wrap for sticky footer-->
 
-        <div class="gap"></div>
-    	</div> <!--end ID Container-->
-           
-       
-      </div><!--end main-content-->
-    
-</div> <!--end page wrap for sticky footer-->
-   
-    <footer class="site-footer">
-        <p class="paraContent footerTextContainer">Website by Melody Craven, Xinyu Mu, Zhixuan Li, and Minghui Zhi</p>
-        <p><a href="resources.html">Content Sources</a></p>
+    <footer class="site-footer ">
+        <p class="paraContent footerTextContainer ">Website by Melody Craven, Xinyu Mu, Zhixuan Li, and Minghui Zhi</p>
+        <p><a href="resources.html ">Content Sources</a></p>
     </footer>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js "></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js "></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js "></script>
+    <script type="text/javascript" src="js/bootstrap.js "></script>
 
-<script>
-$(function(){
+    <script>
+        $(function () {
 
-	// Instantiate MixItUp:
+            // Instantiate MixItUp:
 
-	$('#Container').mixItUp();
+            $('#Container').mixItUp();
 
-});
-</script>
+        });
+    </script>
+    <script>
+        var checkboxFilter = {
 
-	</body>
+            // Declare any variables we will need as properties of the object
+
+            $filters: null,
+            $reset: null,
+            groups: [],
+            outputArray: [],
+            outputString: '',
+
+            // The "init" method will run on document ready and cache any jQuery objects we will need.
+
+            init: function () {
+                var self = this; // As a best practice, in each method we will asign "this" to the variable "self" so that it remains scope-agnostic. We will use it to refer to the parent "checkboxFilter" object so that we can share methods and properties between all parts of the object.
+
+                self.$filters = $('#Filters');
+                self.$reset = $('#Reset');
+                self.$container = $('#Container');
+
+                self.$filters.find('fieldset').each(function () {
+                    self.groups.push({
+                        $inputs: $(this).find('input'),
+                        active: [],
+                        tracker: false
+                    });
+                });
+
+                self.bindHandlers();
+            },
+
+            // The "bindHandlers" method will listen for whenever a form value changes. 
+
+            bindHandlers: function () {
+                var self = this;
+
+                self.$filters.on('change', function () {
+                    self.parseFilters();
+                });
+
+                self.$reset.on('click', function (e) {
+                    e.preventDefault();
+                    self.$filters[0].reset();
+                    self.parseFilters();
+                });
+            },
+
+            // The parseFilters method checks which filters are active in each group:
+
+            parseFilters: function () {
+                var self = this;
+
+                // loop through each filter group and add active filters to arrays
+
+                for (var i = 0, group; group = self.groups[i]; i++) {
+                    group.active = []; // reset arrays
+                    group.$inputs.each(function () {
+                        $(this).is(':checked') && group.active.push(this.value);
+                    });
+                    group.active.length && (group.tracker = 0);
+                }
+
+                self.concatenate();
+            },
+
+            // The "concatenate" method will crawl through each group, concatenating filters as desired:
+
+            concatenate: function () {
+                var self = this,
+                    cache = '',
+                    crawled = false,
+                    checkTrackers = function () {
+                        var done = 0;
+
+                        for (var i = 0, group; group = self.groups[i]; i++) {
+                            (group.tracker === false) && done++;
+                        }
+
+                        return (done < self.groups.length);
+                    },
+                    crawl = function () {
+                        for (var i = 0, group; group = self.groups[i]; i++) {
+                            group.active[group.tracker] && (cache += group.active[group.tracker]);
+
+                            if (i === self.groups.length - 1) {
+                                self.outputArray.push(cache);
+                                cache = '';
+                                updateTrackers();
+                            }
+                        }
+                    },
+                    updateTrackers = function () {
+                        for (var i = self.groups.length - 1; i > -1; i--) {
+                            var group = self.groups[i];
+
+                            if (group.active[group.tracker + 1]) {
+                                group.tracker++;
+                                break;
+                            } else if (i > 0) {
+                                group.tracker && (group.tracker = 0);
+                            } else {
+                                crawled = true;
+                            }
+                        }
+                    };
+
+                self.outputArray = []; // reset output array
+
+                do {
+                    crawl();
+                }
+                while (!crawled && checkTrackers());
+
+                self.outputString = self.outputArray.join();
+
+                // If the output string is empty, show all rather than none:
+
+                !self.outputString.length && (self.outputString = 'all');
+
+                //console.log(self.outputString); 
+
+                // ^ we can check the console here to take a look at the filter string that is produced
+
+                // Send the output string to MixItUp via the 'filter' method:
+
+                if (self.$container.mixItUp('isLoaded')) {
+                    self.$container.mixItUp('filter', self.outputString);
+                }
+            }
+        };
+
+        // On document ready, initialise our code.
+
+        $(function () {
+
+            // Initialize checkboxFilter code
+
+            checkboxFilter.init();
+
+            // Instantiate MixItUp
+
+            $('#Container').mixItUp({
+                controls: {
+                    enable: false // we won't be needing these
+                },
+                animation: {
+                    easing: 'cubic-bezier(0.86, 0, 0.07, 1)',
+                    duration: 600
+                }
+            });
+        });
+    </script>
+
+</body>
+
 </html>

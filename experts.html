@@ -7,18 +7,15 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
      <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+     
     
     
     <!-- Bootstrap Thumbnail Gallery -->
   
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet" type="text/css">
 </head>
 
 <body id="expertsBody" class="grayBackground">
@@ -44,7 +41,7 @@
                     <div class="nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav nav-pills ">
                           
-                            <li><a href="quiz.html">TAKE A QUIZ</a></li>
+                            <li><a href="quiz.html">QUIZ</a></li>
                             <li><a href="categories.html">CATEGORIES</a></li>
                             <li><a href="#">EXPERTS</a></li>
                         </ul>
@@ -73,12 +70,12 @@
 <div id="main-content">
   <h2>Learn how to care for your new pet</h2>
   <div id="petcareCategories">
-<ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#home"><img class="img-responsive icon" src="images/expertBird.png" alt="">Bird</a></li>
-  <li><a data-toggle="tab" href="#menu1"><img class="img-responsive icon" src="images/expertCat.png" alt="">Cat</a></li>
-  <li><a data-toggle="tab" href="#menu2"><img class="img-responsive icon" src="images/expertDog.png" alt="">Dog</a></li>
-  <li><a data-toggle="tab" href="#menu3"><img class="img-responsive icon" src="images/expertFish.png" alt="">Fish</a></li>
-  <li><a data-toggle="tab" href="#menu4"><img class="img-responsive icon" src="images/expertRep.png" alt="">Reptile</a></li>
+	<ul class="nav nav-tabs">
+ 	 <li class="active"><a data-toggle="tab" href="#home"><img class="img-responsive icon" src="images/expertBird.png" alt="">Bird</a></li>
+  	<li><a data-toggle="tab" href="#menu1"><img class="img-responsive icon" src="images/expertCat.png" alt="">Cat</a></li>
+  	<li><a data-toggle="tab" href="#menu2"><img class="img-responsive icon" src="images/expertDog.png" alt="">Dog</a></li>
+  	<li><a data-toggle="tab" href="#menu3"><img class="img-responsive icon" src="images/expertFish.png" alt="">Fish</a></li>
+  	<li><a data-toggle="tab" href="#menu4"><img class="img-responsive icon" src="images/expertRep.png" alt="">Reptile</a></li>
 </ul>
 
 <div class="tab-content">
@@ -216,13 +213,13 @@ If you encounter behavior issues you are unfamiliar with, ask your veterinarian 
     </div> <!-- end petcareCategories -->
     
     	<div id="chat">
-            <h3>Ask an expert now!</h3>
-            	<img src="images/expertDoctor.png" alt=""/>
+            <h3>Chat with an expert now!</h3>
+            	<img id="expert" src="images/expertDoctor.png" alt=""/>
+                <div id="greeting"><p>Hello, my name is Paula. What would you like to know about pets?</p></div>
+                <div id="questionArea"></div>
                 <form class="chat-form" role="">
-                     <div class="form-group">
-                       <input type="text" class="form-control" placeholder="Type your question here">
-                    </div>
-                    <button type="submit" class="btn btn-default">Send</button>
+                 	<input id="inputQ" type="text" class="form-control" placeholder="Type your question here">        
+                    <button id="submitQ" type="submit" class="chat">Send</button>
                 </form>
         </div><!--end chat-->
         </div><!--end main-content-->
@@ -232,11 +229,9 @@ If you encounter behavior issues you are unfamiliar with, ask your veterinarian 
         <p><a href="resources.html">Content Sources</a></p>
     </footer>
 
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+<script type="text/javascript" src="js/self.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js "></script>
 	</body>
 </html>
